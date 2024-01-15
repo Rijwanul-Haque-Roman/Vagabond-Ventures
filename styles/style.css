@@ -14,7 +14,28 @@ body {
   --header-color: #131318;
   --secondary-color: #5a5a5d;
 }
-
+h2 {
+  color: var(--header-color);
+  font-size: 40px;
+  font-weight: 800;
+}
+p {
+  color: var(--secondary-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.btn-primary {
+  border-radius: 8px;
+  background: var(--theme-color);
+  width: 174px;
+  height: 52px;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  border: 0;
+}
 /* nav section styles */
 .logo {
   display: flex;
@@ -30,8 +51,10 @@ nav {
 }
 nav .logo {
   color: var(--theme-color);
-  font-size: 30px;
   font-weight: 800;
+}
+nav .logo h1 {
+  font-size: 36px;
 }
 nav .logo span {
   color: var(--header-color);
@@ -57,8 +80,8 @@ nav ul .home {
 /* banner section styles */
 .banner {
   text-align: center;
-  margin-top: 50px;
-  height: 600px;
+  margin: 50px 0 100px;
+  height: 75vh;
   background: linear-gradient(
       180deg,
       rgba(19, 19, 24, 0.8) 0%,
@@ -108,4 +131,26 @@ nav ul .home {
 .banner form .theme {
   background: var(--theme-color);
   color: #fff;
+}
+/* popular tours section styles */
+.popular {
+  display: flex;
+  align-items: center;
+  gap: 5vw;
+}
+.popular h2 {
+  margin: 0;
+}
+.popular p {
+  margin: 24px 0;
+}
+.popular li {
+  color: var(--secondary-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 16px 0;
+}
+.popular button {
+  margin-top: 32px;
 }

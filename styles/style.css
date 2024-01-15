@@ -1,4 +1,111 @@
 /* common shared styles */
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap");
+
 html {
   margin: 0;
+}
+body {
+  max-width: 85%;
+  margin: 0 auto;
+  font-family: "Mulish";
+}
+:root {
+  --theme-color: #ff5400;
+  --header-color: #131318;
+  --secondary-color: #5a5a5d;
+}
+
+/* nav section styles */
+.logo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+nav {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .logo {
+  color: var(--theme-color);
+  font-size: 30px;
+  font-weight: 800;
+}
+nav .logo span {
+  color: var(--header-color);
+}
+nav .logo h1 {
+  margin: 0;
+}
+nav ul {
+  display: flex;
+  gap: 45px;
+  list-style: none;
+}
+nav li a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-size: 18px;
+  font-weight: 400;
+}
+nav ul .home {
+  color: var(--theme-color);
+  font-weight: 700;
+}
+/* banner section styles */
+.banner {
+  text-align: center;
+  margin-top: 50px;
+  height: 600px;
+  background: linear-gradient(
+      180deg,
+      rgba(19, 19, 24, 0.8) 0%,
+      rgba(19, 19, 24, 0) 100%
+    ),
+    url("../images/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+}
+.banner h1 {
+  padding-top: 100px;
+  margin: 0;
+  color: #fff;
+  font-size: 64px;
+  font-weight: 800;
+}
+.banner p {
+  margin: 24px auto 48px;
+  width: 676px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.banner form {
+  display: inline-flex;
+  padding: 16px;
+  align-items: flex-start;
+  gap: 24px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+}
+.banner form .field {
+  width: 174px;
+  height: 52px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #fff;
+  border: none;
+  color: rgba(19, 19, 24, 0.5);
+  font-size: 16px;
+  font-weight: 400;
+  padding: 14px;
+}
+.banner form .theme {
+  background: var(--theme-color);
+  color: #fff;
 }

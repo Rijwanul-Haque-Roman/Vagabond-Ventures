@@ -9,7 +9,7 @@ html {
 
 header,
 main {
-  max-width: 85%;
+  max-width: 1170px;
   margin: 0 auto;
 }
 
@@ -52,12 +52,12 @@ header p {
 /* nav section styles */
 .logo {
   display: flex;
-  gap: 10px;
+  gap: 16px;
   align-items: center;
 }
 
 nav {
-  margin-top: 50px;
+  margin-top: 52px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -86,7 +86,7 @@ nav .logo h1 {
 
 nav ul {
   display: flex;
-  gap: 45px;
+  gap: 44px;
   list-style: none;
 }
 
@@ -109,7 +109,7 @@ nav ul .home {
   align-items: center;
   text-align: center;
   margin: 50px 0 100px;
-  height: 75vh;
+  height: 500px;
   background: linear-gradient(180deg,
       rgba(19, 19, 24, 0.8) 0%,
       rgba(19, 19, 24, 0) 100%),
@@ -121,6 +121,7 @@ nav ul .home {
 }
 
 .banner h1 {
+  margin: 0;
   color: #fff;
   font-size: 64px;
   font-weight: 800;
@@ -165,8 +166,7 @@ nav ul .home {
 /* popular tours section styles */
 .popular {
   display: flex;
-  align-items: center;
-  gap: 5vw;
+  justify-content: space-between;
 }
 
 .popular h2 {
@@ -174,7 +174,17 @@ nav ul .home {
 }
 
 .popular p {
+  width: 530px;
   margin: 24px 0;
+}
+
+.popular .bottom-para {
+  margin: 0;
+}
+
+.popular ul {
+  width: 525px;
+  padding-left: 24px;
 }
 
 .popular li {
@@ -200,7 +210,7 @@ nav ul .home {
 }
 
 .destination p {
-  width: 40vw;
+  width: 643px;
   margin: 0 auto;
 }
 
@@ -208,7 +218,7 @@ nav ul .home {
   margin-top: 48px;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(3, 40vh);
+  grid-template-rows: repeat(3, 300px);
   grid-column-gap: 24px;
   grid-row-gap: 24px;
 }
@@ -267,39 +277,43 @@ nav ul .home {
   margin: 100px 0;
 }
 
+.why-choose-us h2 {
+  margin: 0;
+}
+
 .why-choose-us>p {
-  width: 40vw;
-  margin: 0 auto;
+  width: 643px;
+  margin: 24px auto 48px;
 }
 
 .card-container {
   display: flex;
   justify-content: center;
-  gap: 1.67vw;
+  gap: 24px;
   margin: 48px auto 0;
 }
 
 #card img {
-  width: 3.33vw;
-  height: 6.9vh;
+  width: 64px;
+  height: 64px;
 }
 
 #card {
-  width: 40vw;
-  height: 27vh;
+  width: 509px;
+  height: 220px;
   text-align: left;
   padding: 32px;
 }
 
 #card h3 {
-  margin: 2.96vh 0 1.4vh;
+  margin: 32px 0 16px;
   color: var(--header-color);
   font-size: 24px;
   font-weight: 800;
 }
 
 #card p {
-  width: 38vw;
+  width: 486px;
 }
 
 .card-1 {
@@ -327,21 +341,26 @@ nav ul .home {
   margin: 100px auto;
 }
 
+.deals-and-discounts h2 {
+  margin: 0;
+}
+
 .deals-and-discounts p {
-  width: 40vw;
-  margin: 0 auto;
+  width: 643px;
+  margin: 24px auto 48px;
 }
 
 .deal {
-  margin: 4.4vh;
+  width: 1170px;
+  height: 500px;
   display: flex;
   justify-content: right;
   align-items: center;
-  height: 70vh;
   border-radius: 16px;
 }
 
 .box-1 {
+  margin-top: 24px;
   background: url("../images/kyoto.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -349,6 +368,7 @@ nav ul .home {
 }
 
 .box-2 {
+  margin-top: 24px;
   justify-content: left;
   background: url("../images/phuket.jpg");
   background-repeat: no-repeat;
@@ -357,6 +377,7 @@ nav ul .home {
 }
 
 .box-3 {
+  margin-top: 24px;
   background: url("../images/mykonos.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -369,9 +390,10 @@ nav ul .home {
 
 .deal .offer {
   text-align: left;
-  margin-right: 5vw;
-  padding: 2.6vw;
-  width: 50%;
+  margin: 56px;
+  padding: 50px;
+  width: 479px;
+  height: 289px;
   border-radius: 16px;
   border: 2px solid #fff;
   background: rgba(255, 255, 255, 0.8);
@@ -380,53 +402,57 @@ nav ul .home {
 
 .top {
   display: flex;
+  justify-content: space-between;
 }
 
 .top p {
-  margin: 10px;
+  text-align: center;
 }
 
 .offer p {
   margin: 0;
-  width: 70%;
+  width: 452px;
 }
 
 .offer h3 {
+  margin: 26px 0 16px;
   color: var(--header-color);
   font-size: 24px;
   font-weight: 800;
 }
 
 .offer h4 {
+  margin: 16px 0 24px;
   color: var(--theme-color);
   font-size: 20px;
   font-weight: 800;
 }
 
 .deals-and-discounts>.btn-primary {
+  margin: 48px 0 0;
   width: 210px;
 }
 
 /* video section related styles */
 .video {
-  margin: 9.25vh auto;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 
 .video .section-details {
-  width: 28vw;
+  width: 532px;
 }
 
 .video iframe {
-  width: 31vw;
-  height: 40vh;
+  width: 610px;
+  height: 424px;
+  border-radius: 16px;
 }
 
 .section-details h2 {
   margin: 0;
-  width: 23vw;
+  width: 448px;
   color: var(--header-color);
   font-size: 40px;
   font-weight: 800;
@@ -437,31 +463,37 @@ nav ul .home {
   margin: 24px 0;
 }
 
+.section-details ul {
+  padding-left: 20px;
+  margin: 24px 0 32px;
+}
+
 .section-details li {
   color: var(--header-color);
   font-size: 16px;
   font-weight: 700;
   line-height: 26px;
-  margin: 16px 0;
-  padding-left: 0.8vw;
+  margin: 16px 0 0;
 }
 
 .section-details button {
-  margin-top: 2.9vh;
+  margin-top: 32px;
   padding: 0;
 }
 
 /* newsletter section styles*/
 .newsletter {
-  max-width: 1170px;
+  width: 1170px;
   display: flex;
-  gap: 1.25vw;
-  margin: 9.25vh auto;
+  gap: 24px;
+  justify-items: space-between;
+  align-items: center;
+  margin: 100px auto;
 }
 
 .form {
-  width: 24.6vw;
-  flex-shrink: 0;
+  width: 394px;
+  height: 342px;
   border: 1px solid var(--theme-color);
   border-radius: 16px;
   padding: 40px;
@@ -475,21 +507,22 @@ nav ul .home {
 }
 
 .form p {
-  width: 18vw;
-  margin: 2vh 0 3.125vh;
+  width: 350px;
+  margin: 16px 0 24px;
 }
 
 .form form {
   display: flex;
   flex-direction: column;
-  padding: 3vh 0;
-  gap: 16px;
   border-top: 1px solid rgba(19, 19, 24, 0.10);
+  padding-top: 24px;
 }
 
-.form form input {
-  width: 23.4vw;
-  height: 6.7vh;
+.form form input {}
+
+.form .text {
+  width: 373px;
+  height: 52px;
   border-radius: 8px;
   background: rgba(19, 19, 24, 0.05);
   border: none;
@@ -497,17 +530,24 @@ nav ul .home {
   font-size: 16px;
   font-weight: 400;
   padding-left: 20px;
+  margin-bottom: 16px;
 }
 
-.form button {
-  width: 410px;
+.form form input[type="submit"] {
+  background: var(--theme-color);
+  margin-top: 8px;
+  width: 393px;
   height: 52px;
+  border-radius: 8px;
+  border: none;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .newsletter .img {
-  /* flex: 1; */
   width: 672px;
-  height: 500px;
+  height: 422px;
   background: url('../images/newsletter.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -524,8 +564,8 @@ nav ul .home {
   position: absolute;
   bottom: 48px;
   right: 8px;
-  width: 16.8vw;
-  height: 11.11vh;
+  width: 324px;
+  height: 120px;
   text-align: center;
   transform: rotate(-19.628deg);
   flex-shrink: 0;
@@ -551,16 +591,13 @@ nav ul .home {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 50vh;
+  height: 502px;
   background: rgba(19, 19, 24, 0.05);
 }
 
-.footer .logo {
+.footer .logo h1 {
   color: var(--theme-color);
   font-weight: 800;
-}
-
-.footer .logo h1 {
   font-size: 36px;
 }
 
@@ -581,17 +618,17 @@ nav ul .home {
 .footer .socials p {
   font-size: 24px;
   color: var(--header-color);
-  word-spacing: 2vw;
+  word-spacing: 32px;
 }
 
 hr {
-  margin: 4.6vh 0;
-  width: 80%;
+  margin: 50px 0;
+  width: 872px;
   border: 1px solid rgba(19, 19, 24, 0.10);
 }
 
 .footer p {
-  font: 'Inter';
+  font-family: 'Inter';
   color: var(--header-color);
   font-size: 16px;
   font-weight: 300;

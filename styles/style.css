@@ -214,3 +214,48 @@ nav ul .home {
   grid-area: 3 / 4 / 4 / 9;
   background: url("../images/bandarban.png");
 }
+/* why choose us section */
+.why-choose-us {
+  text-align: center;
+  margin: 100px 0;
+}
+.why-choose-us > p {
+  width: 40vw;
+  margin: 0 auto;
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin: 48px auto 0;
+}
+#card {
+  width: 30vw;
+  text-align: left;
+  padding: 32px;
+}
+#card h3 {
+  margin: 32px 0 16px;
+  color: var(--header-color);
+  font-size: 24px;
+  font-weight: 800;
+}
+#card p {
+  width: 30vw;
+}
+.card-1 {
+  border-radius: 16px;
+  border: 1px solid rgba(251, 181, 99, 0.2);
+  background: rgba(251, 181, 99, 0.05);
+}
+.card-2 {
+  border-radius: 16px;
+  border: 1px solid rgba(41, 206, 246, 0.2);
+  background: rgba(41, 206, 246, 0.05);
+}
+.card-3 {
+  margin: 24px auto;
+  border-radius: 16px;
+  border: 1px solid rgba(233, 68, 68, 0.2);
+  background: rgba(233, 68, 68, 0.05);
+}

@@ -79,6 +79,9 @@ nav ul .home {
 }
 /* banner section styles */
 .banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   margin: 50px 0 100px;
   height: 75vh;
@@ -94,8 +97,6 @@ nav ul .home {
   border-radius: 16px;
 }
 .banner h1 {
-  padding-top: 100px;
-  margin: 0;
   color: #fff;
   font-size: 64px;
   font-weight: 800;
@@ -258,4 +259,76 @@ nav ul .home {
   border-radius: 16px;
   border: 1px solid rgba(233, 68, 68, 0.2);
   background: rgba(233, 68, 68, 0.05);
+}
+/* deals and discount section styles */
+.deals-and-discounts {
+  text-align: center;
+  margin: 100px auto;
+}
+.deals-and-discounts p {
+  width: 40vw;
+  margin: 0 auto;
+}
+.deal {
+  margin: 4.4vh;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  height: 70vh;
+  border-radius: 16px;
+}
+.box-1 {
+  background: url("../images/kyoto.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.box-2 {
+  justify-content: left;
+  background: url("../images/phuket.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.box-3 {
+  background: url("../images/mykonos.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.box-2 .offer {
+  margin-left: 5vw;
+}
+.deal .offer {
+  text-align: left;
+  margin-right: 5vw;
+  padding: 2.6vw;
+  width: 50%;
+  border-radius: 16px;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(2.5px);
+}
+.top {
+  display: flex;
+}
+.top p {
+  margin: 10px;
+}
+.offer p {
+  margin: 0;
+  width: 70%;
+}
+.offer h3 {
+  color: var(--header-color);
+  font-size: 24px;
+  font-weight: 800;
+}
+.offer h4 {
+  color: var(--theme-color);
+  font-size: 20px;
+  font-weight: 800;
+}
+.deals-and-discounts > .btn-primary {
+  width: 210px;
 }
